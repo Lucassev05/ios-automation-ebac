@@ -6,6 +6,7 @@
   "main": "index.js",
   "scripts": {
     "test": "wdio run ./wdio.ios.conf.js",
+    "allure": "allure generate allure-results && allure open",
     "wdio": "wdio run ./wdio.conf.js"
   },
   "keywords": [],
@@ -19,9 +20,6 @@
     "@wdio/spec-reporter": "^8.39.0",
     "allure-commandline": "^2.29.0",
     "appium-uiautomator2-driver": "^3.7.5",
-    "chai": "^5.1.1",
-    "dotenv": "^16.4.5",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.5.4"
+    "dotenv": "^16.4.5"
   }
 }
