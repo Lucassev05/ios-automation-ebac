@@ -26,6 +26,9 @@ export const config = {
   exclude: [
     // 'path/to/excluded/files'
   ],
+  suites: {
+    checkout: ["./test/specs/checkout.test.js"],
+  },
   //
   // ============
   // Capabilities

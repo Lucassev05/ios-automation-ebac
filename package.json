@@ -6,6 +6,7 @@
   "main": "index.js",
   "scripts": {
     "test": "wdio run ./wdio.ios.conf.js",
+    "test:checkout": "wdio run ./wdio.ios.conf.js --suite checkout",
     "allure": "allure generate allure-results && allure open",
     "wdio": "wdio run ./wdio.conf.js"
   },
