@@ -47,3 +47,11 @@ Para executar os testes deste projeto, você precisará:
    ```bash
    npm run allure
    ```
+
+### Observações
+
+1. **Appium error: connect ECONNREFUSED 127.0.0.1:8100**: Isso ocorre devido ao Webdriveagent não ter sido instalado automaticamente no simulador. Nesse caso deve rodar novamente o teste ou tentar executar o appium com o seguinte comando:
+
+```bash
+   appium --default-capabilities "{\"appium:systemPort\":9001}" --relaxed-security
+```
