@@ -12,6 +12,7 @@ Para executar os testes deste projeto, você precisará:
 
 - **Appium Server**: Instalado na máquina.
 - **Node**: Instalado na máquina.
+- **Java**: Instalado na máquina.
 - **Simulador iOS**: Necessário para rodar os testes em um ambiente virtual.
 - **Macbook**: A execução dos testes requer um Macbook devido à necessidade do simulador do iPhone.
 
