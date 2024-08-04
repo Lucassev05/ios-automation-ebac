@@ -28,7 +28,7 @@ Para executar os testes deste projeto, você precisará:
 2. **Instale as Dependências**:
 
    ```bash
-   sudo npm install
+   npm install
    ```
 
 3. **Inicie o Appium**:
@@ -40,7 +40,7 @@ Para executar os testes deste projeto, você precisará:
    npm run test
    ```
 
-   Isso executará o comando `wdio run ./wdio.ios.conf.js` para iniciar a suíte de testes.
+   Isso executará o comando `wdio run ./config/wdio.conf.js` para iniciar a suíte de testes.
 
 5. **Visualize os Relatórios**:
    Os relatórios de teste serão gerados utilizando Allure. Para visualizá-los, utilize:
