@@ -7,7 +7,8 @@
   "scripts": {
     "test": "wdio run ./config/wdio.conf.js",
     "test:checkout": "wdio run  ./config//wdio.conf.js --suite checkout",
-    "allure": "allure generate allure-results && allure open"
+    "report": "allure generate allure-result",
+    "posttest": "npm run report"
   },
   "keywords": [],
   "author": "",
