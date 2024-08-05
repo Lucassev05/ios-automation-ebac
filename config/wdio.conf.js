@@ -1,15 +1,23 @@
-import { localConf } from './local.conf.js'
-import { sauceConf } from './sauce.conf.js'
+import { localConf } from "./local.conf.js";
+import { sauceConf } from "./sauce.conf.js";
 
-import 'dotenv/config';
+import "dotenv/config";
 
 function getConfig() {
-    switch (process.env.ENVIRONMENT) {
-        case 'local':
-            return localConf
-        case 'saucelabs':
-            return sauceConf
-    }
+  console.log(
+    process.env.ENVIRONMENT,
+    process.env.PLATFORM,
+    process.env.REPORT,
+    process.env.SAUCE_USERNAME,
+    process.env.SAUCE_ACCESS_KEY
+  );
+
+  switch (process.env.ENVIRONMENT) {
+    case "local":
+      return localConf;
+    case "saucelabs":
+      return sauceConf;
+  }
 }
 
-export const config = getConfig()
+export const config = getConfig();
