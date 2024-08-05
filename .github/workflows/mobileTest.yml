@@ -22,12 +22,12 @@ jobs:
           node-version: "20"
       - name: Setting Enviroments
         run: |
-        echo "PLATFORM=${{ secrets.PLATFORM }}" >> $GITHUB_ENV
-        echo "ENVIRONMENT=${{ secrets.ENVIRONMENT }}" >> $GITHUB_ENV
-        echo "REPORT=${{ secrets.REPORT }}" >> $GITHUB_ENV
-        echo "SAUCE_USERNAME=${{ secrets.SAUCE_USERNAME }}" >> $GITHUB_ENV
-        echo "SAUCE_ACCESS_KEY=${{ secrets.SAUCE_ACCESS_KEY }}" >> $GITHUB_ENV
-        
+          echo "PLATFORM=${{ secrets.PLATFORM }}" >> $GITHUB_ENV
+          echo "ENVIRONMENT=${{ secrets.ENVIRONMENT }}" >> $GITHUB_ENV
+          echo "REPORT=${{ secrets.REPORT }}" >> $GITHUB_ENV
+          echo "SAUCE_USERNAME=${{ secrets.SAUCE_USERNAME }}" >> $GITHUB_ENV
+          echo "SAUCE_ACCESS_KEY=${{ secrets.SAUCE_ACCESS_KEY }}" >> $GITHUB_ENV
+
       - name: Install Dependencies
         run: npm i
       - name: Run Tests
