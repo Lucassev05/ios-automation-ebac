@@ -10,7 +10,7 @@ import checkoutPage from "../pageobjects/checkout.page.js";
 describe("Checkout flow", async () => {
   it("Success", async () => {
     await homePage.openMenu("Account");
-    await loginPage.login("cliente@ebac.art.br", "GD*peToHNJ1#c$sgk08EaYJQ");
+    await loginPage.login("lucas.evangelista@ebac.art.br", "Teste123");
     await homePage.openMenu("Browse");
 
     await browsePage.clickOnFirstProduct();
